@@ -34,6 +34,7 @@ $(document).ready(function() {
    
    var garys=0;
    var lastID = "";
+   var recentautocall=0;
    
    function autoScroll(entry) {
    	var itemHeight = $('#eq li').outerHeight();
@@ -69,12 +70,19 @@ $(document).ready(function() {
         if(thisentry != ""){
           autoScroll(thisentry);
           lastID = thisID;
+          recentautocall++;
+          setTimeout(checkUpdates, 100);
         }
       });
    }
    
    function handleCheckUpdates(){
-     checkUpdates();
+     if(recentautocall==0){
+       checkUpdates();
+     }
+     else{
+       recentautocall=0;
+     }
      setTimeout(handleCheckUpdates, 10000);
    }
    
