@@ -26,7 +26,7 @@ function parseGNSFeature(feature){
     // image format: http://static1.geonet.org.nz/maps/quake/hdpi/175E40S.png
     toreturn += '<li>Magnitude: ' + magnitude + '</li>';
     toreturn += '<li>Time: ' + time + '</li>';
-    toreturn = '<div style="float: left; width: 100px;"><img src="' + imgsrc + '"></div><div><ul>'+toreturn+'</ul></div>';
+    toreturn = '<div style="float: left; width: 100px;"><a href="http://geonet.org.nz/quakes/region/newzealand/"' + id + '><img src="' + imgsrc + '"></a></div><div><ul>'+toreturn+'</ul></div>';
     return toreturn
 }
 
@@ -71,7 +71,7 @@ $(document).ready(function() {
           autoScroll(thisentry);
           lastID = thisID;
           recentautocall++;
-          setTimeout(checkUpdates, 100);
+          setTimeout(checkUpdates, 1000);
         }
       });
    }
