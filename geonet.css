@@ -1,0 +1,23 @@
+.quakeContainer {
+    width: 400px;
+    height: 28.5em; /* total visible quakes, in this case set to 5 */ 
+    overflow: hidden; /*keep quakes outside of the container from being seen */
+}
+#eq {
+    width: 400px;
+    position: relative;
+    list-style-type: none;
+    top: -6em; /* allows a quake to be moved into hidden space before scrolling into view */
+    margin: 0px;
+    padding: 0px;
+}
+.quakeImage {
+    float: left;
+    padding-right: 1em;
+}
+.quake {
+    height: 6em;
+    padding-top: 0.3em;
+    font-size: 0.9em;
+    border-bottom: 1px solid #333333;
+}
