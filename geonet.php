@@ -6,7 +6,7 @@ header('Access-Control-Allow-Origin: *');
 <!DOCTYPE html>
     <html>
         <head>
-            <title>jQuery Automated Geonet Scrolling Widget</title>
+            <title>Geonet Reader</title>
             <link rel="stylesheet" href="geonet.css" />
             <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
             <script type="text/javascript" src="geonet.js.php"></script>
