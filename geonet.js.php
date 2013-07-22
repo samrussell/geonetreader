@@ -55,7 +55,7 @@ $(document).ready(function() {
    
    function checkUpdates(){
       //autoScroll('gary' + garys++);
-      $.getJSON('http://www.geonet.org.nz/quakes/services/all.json' ,function(data){
+      $.getJSON('jsonwrapper.php' ,function(data){
         thisID = "";
         thisentry = "";
         for(var i=0;i<data.features.length;i++){
