@@ -1,6 +1,7 @@
 <?
-header('Access-Control-Allow-Origin: http://www.geonet.org.nz');
-header('Access-Control-Allow-Origin: http://ajax.googleapis.com');
+//header('Access-Control-Allow-Origin: http://www.geonet.org.nz');
+//header('Access-Control-Allow-Origin: http://ajax.googleapis.com');
+header('Access-Control-Allow-Origin: *');
 ?>
 <!DOCTYPE html>
     <html>
