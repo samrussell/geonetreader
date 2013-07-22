@@ -1,5 +1,6 @@
 <?
 header("Content-Type: text/javascript");
+header('Access-Control-Allow-Origin: *');
 ?>
 
 // Written by Sam Russell in July, 2013
