@@ -59,7 +59,7 @@ $(document).ready(function() {
       $.getJSON('jsonwrapper.php' ,function(data){
         thisID = "";
         thisentry = "";
-        for(var i=0;i<data.features.length;i++){
+        for(var i=0;i<data.features.length && i<5;i++){
           feature = data.features[i];
           if(feature.properties.publicid == lastID){
             break;
